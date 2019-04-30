@@ -1,7 +1,7 @@
 # WearConfirmation
 Wearconfirmation is an Android Wear library used for confirmations.
 
-<img src="images/Demo.gif" width="32%" />
+<img src="images/demo.gif" align="center"/>
 
 # Download
 
