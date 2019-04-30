@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/box_padding"
+        android:paddingTop="@dimen/box_padding"
+        android:paddingRight="@dimen/box_padding"
+        app:boxedEdges="all">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/title_size" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxLines="3"
+            android:textColor="@color/message_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.wear.widget.CircularProgressLayout
+                android:id="@+id/circular_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="@dimen/progress_stroke_width"
+                app:backgroundColor="@color/black"
+                app:colorSchemeColors="@color/black_86p"
+                app:strokeWidth="@dimen/progress_stroke_width">
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_white_40_12" />
+
+            </android.support.wear.widget.CircularProgressLayout>
+
+            <TextView
+                android:id="@+id/tv_conf_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:maxLines="1"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/message_size"
+                tools:text="Listening.." />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.wear.widget.BoxInsetLayout>

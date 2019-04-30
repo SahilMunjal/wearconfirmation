@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.Wearable">
+        <item name="android:colorAccent">@color/black</item>
+    </style>
+
+    <style name="AppThemeWithoutSwipe" parent="AppTheme">
+        <item name="android:windowSwipeToDismiss">false</item>
+    </style>
+
+</resources>
